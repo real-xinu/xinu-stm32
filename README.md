@@ -24,7 +24,7 @@ carrying out the PendSV exception
 
 ## How to build and run
 Xinu for STM32 uses simple Makefiles. The source code should be compiled with a cross compiler (i.e. Ubuntu's standard package: GCC cross compiler for ARM Cortex-A/R/M processors)
-STM32Flash (https://sourceforge.net/projects/stm32flash) can be used for flashing to compile code to the device's flash ROM. Use `qemu make` to run Xinu for STM32 in Qemu. Please note that this version of qemu should be manually build (see https://github.com/beckus/qemu_stm32)
+STM32Flash (https://sourceforge.net/projects/stm32flash) can be used for flashing the compiled code to the device's flash ROM. Use `qemu make` to run Xinu for STM32 in Qemu. Please note that this version of qemu should be manually build (see https://github.com/beckus/qemu_stm32)
 
 
 ## Screenshots
