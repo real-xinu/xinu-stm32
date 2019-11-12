@@ -14,13 +14,13 @@ request until all other IRQ handlers have completed their processing before
 carrying out the PendSV exception 
 
 ## Supported Peripherals (currently)
-UART (Serial)
-GPIO
-SPI
+* UART (Serial)
+* GPIO
+* SPI
 
 ## Tested boards
-STM32F103* - https://stm32-base.org/boards/STM32F103RCT6-STM32-Mini-V2.0
-Qemu for STM32 - https://github.com/beckus/qemu_stm32
+1. STM32F103* - https://stm32-base.org/boards/STM32F103RCT6-STM32-Mini-V2.0
+2. Qemu for STM32 - https://github.com/beckus/qemu_stm32
 
 ## How to build and run
 Xinu for STM32 uses simple Makefiles. The source code should be compiled with a cross compiler (i.e. Ubuntu's standard package: GCC cross compiler for ARM Cortex-A/R/M processors)
@@ -28,8 +28,7 @@ STM32Flash (https://sourceforge.net/projects/stm32flash) can be used for flashin
 
 
 ## Screenshots
-![Screenshot](https://github.com/robinkrens/xinu-for-stm32/raw/master/img/screenshot.png "bootscreen")
-
+![Screenshot](https://github.com/robinkrens/xinu-for-stm32/raw/master/screenshot.png "bootscreen")
 
 More general information about Xinu can be found at http://xinu.mscs.mu.edu/ and  http://www.mscs.mu.edu/~brylow/xinu/
 
