@@ -2,7 +2,7 @@
 Xinu stands for Xinu Is Not Unix -- although it shares concepts and even names with Unix, the internal design differs completely. Xinu is a small, elegant operating system that supports dynamic process creation, dynamic memory allocation, network communication, local and remote file systems, a shell, and device-independent I/O functions. The small size makes Xinu suitable for embedded environments.
 
 ## What is Xinu for STM32
-Xinu for STM32 is a port of the original MIPS version of Xinu. The STM32 family of 32-bit microcontrollers is a popular SoC based on the Arm Cortex-M processor.
+Xinu for STM32 is a port of the ARM version of Xinu. The STM32 family of 32-bit microcontrollers is a popular SoC based on the Arm Cortex-M processor.
 Besides porting the original version, Xinu for STM32 is extended with the following specific Cortex-M* features:
 
 * Shadowed Stack Pointer:  Two stack pointers are available. The MSP is used
@@ -30,5 +30,5 @@ STM32Flash (https://sourceforge.net/projects/stm32flash) can be used for flashin
 ## Screenshots
 ![Screenshot](https://github.com/robinkrens/xinu-for-stm32/raw/master/screenshot.png "bootscreen")
 
-More general information about Xinu can be found at http://xinu.mscs.mu.edu/ and  http://www.mscs.mu.edu/~brylow/xinu/
+More general information about Xinu can be found at https://xinu.cs.purdue.edu/
 
