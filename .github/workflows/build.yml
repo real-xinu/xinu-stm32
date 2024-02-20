@@ -1,0 +1,29 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Build Docker image
+        run: |
+          docker build --platform=linux/amd64,linux/arm64 -t xinu-container .
+      
+      - name: Run compilation and testing
+        run: |
+          docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp xinu-container sh -c 'cd compile && make'
+
