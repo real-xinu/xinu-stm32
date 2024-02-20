@@ -15,9 +15,9 @@ carrying out the PendSV exception
 
 
 ## Supported Peripherals (currently)
-[X] UART
-[X] GPIO
-[X] SPI
+* [X] UART
+* [X] GPIO
+* [X] SPI
 
 ## Tested boards
 1. STM32F103* - https://stm32-base.org/boards/STM32F103RCT6-STM32-Mini-V2.0
